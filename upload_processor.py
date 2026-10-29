@@ -14,7 +14,7 @@ chroma_client = chromadb.PersistentClient(
     path="./chroma_db"
 )
 
-collection = chroma_client.get_collection(
+collection = chroma_client.get_or_create_collection(
     name="manufacturing_documents_local"
 )
 
